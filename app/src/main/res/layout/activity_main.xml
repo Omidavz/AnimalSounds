@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientt"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animal Sounds"
+        android:textSize="44dp"
+        android:textStyle="bold"
+        android:textColor="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.119" />
+
+    <Button
+        android:id="@+id/horse_btn"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/yellow"
+        android:tag="horse"
+        android:onClick="playAnimalSound"
+        android:text="Horse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/cow_btn"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/red"
+        android:tag="cow"
+        android:onClick="playAnimalSound"
+        android:text="Cow"
+        app:layout_constraintEnd_toEndOf="@+id/horse_btn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/horse_btn"
+        app:layout_constraintTop_toBottomOf="@+id/horse_btn" />
+
+    <Button
+        android:id="@+id/sheep_btn"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/green"
+        android:tag="sheep"
+        android:onClick="playAnimalSound"
+        android:text="Sheep"
+        app:layout_constraintEnd_toEndOf="@+id/horse_btn"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/horse_btn"
+        app:layout_constraintTop_toBottomOf="@+id/cow_btn" />
+
+    <Button
+        android:id="@+id/wolf_btn"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/purple"
+        android:tag="wolf"
+        android:onClick="playAnimalSound"
+        android:text="Wolf"
+        app:layout_constraintEnd_toEndOf="@+id/horse_btn"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/horse_btn"
+        app:layout_constraintTop_toBottomOf="@+id/sheep_btn" />
+
+    <Button
+        android:id="@+id/cat_btn"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/gray"
+        android:tag="cat"
+        android:onClick="playAnimalSound"
+        android:text="Cat"
+        app:layout_constraintEnd_toEndOf="@+id/horse_btn"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/horse_btn"
+        app:layout_constraintTop_toBottomOf="@+id/wolf_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
